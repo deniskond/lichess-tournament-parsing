@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "lichess-tournament-parsing"
+    }
+  },
+  "defaultProject": "lichess-tournament-parsing",
+  "cli": {
+    "analytics": false
+  }
 }
