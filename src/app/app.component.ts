@@ -28,8 +28,6 @@ export class AppComponent {
     public generateTable(): void {
         const tournamentId = this.idForm.get(lichessTournamentIdControlName).value; // 0Osbn51X for testing
 
-        debugger;
-
         this.status = 'Loading...';
 
         this.httpClient
@@ -72,8 +70,6 @@ export class AppComponent {
         });
 
         const playersGamesCount: Record<string, number> = players.reduce((acc, elem) => {
-            debugger;
-
             return acc[elem] ? { ...acc, [elem]: acc[elem] + 1 } : { ...acc, [elem]: 1 };
         }, {});
 
